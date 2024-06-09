@@ -1,0 +1,98 @@
+.head{
+  position: relative;
+  min-height: 165px;
+}
+
+.card{
+  background: white;
+  border-radius: 19px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.footer{
+  padding: 12px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.title{
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+.description{
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.price{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--white-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #111719;
+}
+
+.currency{
+  color: var(--primary-color );
+}
+
+.rating{
+  position: absolute;
+  bottom: -12px;
+  left: 15px;
+  background: var(--white-color);
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #111719;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.add-to-card{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.add-to-card:hover{
+  background: var(--primary-hover-color);
+}
+
+.star{
+  max-width: 10px;
+}
+
+.cart-btn{
+  max-width: 30px;
+}

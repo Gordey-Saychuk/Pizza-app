@@ -1,0 +1,86 @@
+.layout {
+  display: flex;
+  min-height: 89vh; /* 100% высоты экрана */
+}
+
+.sidebar {
+  border-right: 1px solid var(--separator-color); 
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 89vh; /* Занимает всю высоту экрана */
+}
+
+.exit {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.user{
+  margin-bottom: 46px;
+}
+
+.name{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+.email{
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(142, 140, 140);
+}
+
+.avatar{
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 8px 40px rgba(255, 197, 41, 0.25));
+}
+
+.avatar-icon{
+  max-width: 100px;
+}
+
+.menu-icon{
+  max-width: 20px;
+}
+
+.cart-icon{
+  max-width: 20px;
+}
+
+.exit-icon{
+  max-width: 20px;
+}
+
+.active{
+  color: var(--primary-color);
+}
+
+.content{
+  padding: 40px 60px;
+  width: 100%;
+}

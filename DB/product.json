@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 6,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 7,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "name": "Наслождение",
+    "price": 490,
+    "ingredients": [
+      "салями",
+      "руккола",
+      "помидоры",
+      "оливки"
+    ], 
+    "image": "/default-pizza.jpg",
+    "rating": 4.7
+  }
+]
