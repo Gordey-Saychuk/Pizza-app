@@ -1,10 +1,20 @@
-import {  NavLink, Outlet } from "react-router-dom";
+import {  NavLink, Outlet, useNavigate } from "react-router-dom";
 import styles from './Layout.module.css';
 import Button from "../../components/Button/Button";
 import cn from "classnames";
 
 export default function Layout() {
+
+  const navigate = useNavigate();
+
+  const logout = () =>{
+    localStorage.removeItem('jwt');
+    navigate('/auth/login')
+  }
+
   return (
+
+
     <div className={styles.layout}>
       
       <div className={styles.sidebar}>
@@ -33,7 +43,7 @@ export default function Layout() {
           </NavLink>
         </div>
         
-        <Button className={styles.exit}>
+        <Button onClick={logout} className={styles.exit}>
           <img className={styles['exit-icon']} src="/exit.svg" alt="Иконка выход" />
           Выход
         </Button>

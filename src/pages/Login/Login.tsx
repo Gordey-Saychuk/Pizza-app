@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button"; // Предполагаем, что Button используется позже
 import Headling from "../../components/Headling/Headling"; // Предполагаем, что Headling используется позже
 import Input from "../../components/Input/Input";
@@ -6,6 +6,9 @@ import styles from "./Login.module.css";
 import { FormEvent, useState } from "react";
 import axios, { AxiosError } from "axios";
 import { LoginRespons } from "../../interfaces/auth.interfaces";
+import { AppDispath } from "../../store/store";
+import { useDispatch } from "react-redux";
+import { userActions } from "../../store/user.slice";
 
 export type LoginForm = {
   email: {
@@ -18,6 +21,10 @@ export type LoginForm = {
 
 export default function Login() {
   const [error, setError] = useState<string | null>(null); // Исправленная типизация
+  const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispath>();
+
+  const [q, useQ] = useState(false);
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
@@ -34,10 +41,12 @@ export default function Login() {
         password,
       });
       console.log(data);
-      localStorage.setItem('jwt', data.token)
+      dispatch(userActions.addJwt(data.token)) 
+      navigate('/')
     } catch (e) {
       if (e instanceof AxiosError) {
         setError(e.response?.data.message);
+        useQ(true);
       }
     }
   };
@@ -62,6 +71,9 @@ export default function Login() {
         </div>
         <Button appearence="big">Вход</Button>
       </form>
+
+      {q ? <p>Вы ввели бред</p> : ''}
+
       <div className={styles["links"]}>
         <div>Нет аккаунта?</div>
         <Link to="/auth/register">Зарегистрироваться</Link>
